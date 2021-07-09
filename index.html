@@ -32,6 +32,7 @@
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
   <style>
 	/*구글 웹 폰트 적용*/
 	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
@@ -708,17 +709,17 @@ map.relayout();
 <h2>모바일에서 문자보내기</h2>
 <p><a href="sms:01034472936">문자보내기</a></p>
 
-<a id="kakao-link-btn" href="javascript:sendLink()">
+<a id="create-kakao-link-btn" href="javascript:;">
   <img
     src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
   />
 </a>
 <script type="text/javascript">
-  function sendLink() {
-    Kakao.Link.sendScrap({
-      requestUrl: 'https://developers.kakao.com',
-    })
-  }
+    Kakao.init('4114917bba98b382c335ebc0f0f8eba2');
+  Kakao.Link.createScrapButton({
+    container: '#create-kakao-link-btn',
+    requestUrl: 'https://kimysub.github.io/wedding.github.io',
+  })
 </script>
 
 
