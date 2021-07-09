@@ -924,7 +924,7 @@ img.with-border{
 
 #main-slider.fixed-height{
 	position:relative;
-	height:325px;
+	height:125px;
 }
 
 /* ----------------------------------------------*/
@@ -937,14 +937,14 @@ img.with-border{
 #main-slider .slides,
 #main-slider.flexslider .slides li{
 	position:relative;
-	height:300px;
+	height:inherit;
 	width:100%;
 	overflow:hidden;
 }
 
 #main-slider.flexslider .flex-viewport{
 	position:relative;
-	height:300px;
+	height:inherit;
 j
 
 /* 06.2.1 Main Slider Flexslider Control Nav & Paging */
