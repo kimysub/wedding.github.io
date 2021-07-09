@@ -703,10 +703,22 @@ map.relayout();
                             	</h2>
 								<h1>모바일기능</h1>
 <h2>모바일에서 전화걸기</h2>
-<p><a href="tel:01034472936">전화걸기</a>
+<p><a href="tel:01034472936">전화걸기</a></p>
 
 <h2>모바일에서 문자보내기</h2>
 <p><a href="sms:01034472936">문자보내기</a></p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+  function sendLink() {
+    Kakao.Link.sendScrap({
+      requestUrl: 'https://kimysub.github.io/wedding.github.io',
+    })
+  }
+</script>
 
                           	</div>
                         </div>
