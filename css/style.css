@@ -937,15 +937,15 @@ img.with-border{
 #main-slider .slides,
 #main-slider.flexslider .slides li{
 	position:relative;
-	height:inherit;
+	height:300px;
 	width:100%;
 	overflow:hidden;
 }
 
 #main-slider.flexslider .flex-viewport{
 	position:relative;
-	height:inherit;
-}
+	height:300px;
+j
 
 /* 06.2.1 Main Slider Flexslider Control Nav & Paging */
 /* ----------------------------------------------*/
