@@ -302,6 +302,12 @@ img.fullwidth{
 img.with-border{
 	border:1px solid #6a6a6a;
 }
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+  min-zoom: 0.8;
+  max-zoom: 1.2;
+}
 
 
 /*===============================================*/
