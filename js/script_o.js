@@ -327,6 +327,20 @@ $(document).ready(function() {
 	/*if (device.tablet() || device.mobile() || isIE9() || isIE10() ||isSafari()) {
 		$(".image-divider").addClass("mobile");
 	}*/
+document.documentElement.addEventListener('touchstart', function (event) {
+     if (event.touches.length > 1) {
+          event.preventDefault(); 
+        } 
+    }, false);
+
+var lastTouchEnd = 0; 
+
+document.documentElement.addEventListener('touchend', function (event) {
+     var now = (new Date()).getTime();
+     if (now - lastTouchEnd <= 300) {
+          event.preventDefault(); 
+        } lastTouchEnd = now; 
+    }, false);
 
 	// 06. BIND TOUCH FOR PHOTO ITEM (Mobile / Tablet)
 	//==================================================================================
