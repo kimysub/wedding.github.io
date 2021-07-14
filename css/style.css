@@ -3724,7 +3724,8 @@ footer .image-divider.fixed-height{
 }
 
 #footer-couple-name{
-	font-family: 'Oswald','Noto Sans KR', sans-serif;
+	font-family: 'Poor Story', cursive;
+	/*font-family: 'Oswald','Noto Sans KR', sans-serif;*/
 	font-size:15px;
 	color:#FFF;
 	letter-spacing:3px;
