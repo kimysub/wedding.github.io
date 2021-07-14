@@ -518,7 +518,7 @@ img.with-border{
 /* 03.1.2 Additional Class For Nav Center 		 */
 /* ----------------------------------------------*/
 .first-child-margin{
-	margin-left:200px;
+	margin-left:400px;
 }
 
 .last-child-margin{
@@ -1943,8 +1943,7 @@ a:hover .de-icon.effect3{
 /* 09.1 Image 									 */
 /* ----------------------------------------------*/
 .photo-item img {
-	/*width:100%;*/
-	width:200px;
+	width:100%;
 }
 
 /* ----------------------------------------------*/
