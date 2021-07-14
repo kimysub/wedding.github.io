@@ -518,7 +518,7 @@ img.with-border{
 /* 03.1.2 Additional Class For Nav Center 		 */
 /* ----------------------------------------------*/
 .first-child-margin{
-	margin-left:20px;
+	margin-left:200px;
 }
 
 .last-child-margin{
@@ -526,7 +526,7 @@ img.with-border{
 }
 
 .split-margin{
-	margin-left:200px;
+	margin-left:80px;
 }
 
 /* ----------------------------------------------*/
