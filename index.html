@@ -162,10 +162,10 @@
                         		<a href="#main-slider">맨 위로</a>
                         	</li>
                     		<li class="first-child split-margin">
-                            	<a href="#where-when">시간과 장소</a>
+                            	<a href="#gallery-section">갤러리</a>
                             </li>
                             <li>
-                            	<a href="#gallery-section">갤러리</a>
+                            	<a href="#where-when">시간과 장소</a>
                             </li>
 
 
@@ -223,159 +223,6 @@
                 </div>
             </section>
 
-             <!-- WHERE WHEN SECTION -->
-            <section id="where-when">
-            	<div class="container">
-
-               	 	<!-- ROW-1 -->
-                	<div class="row">
-
-                        <!-- SECTION TITLE -->
-                    	<div class="col-md-offset-2 col-md-8 text-center">
-
-                        	<div class="section-title animation fadeInUp">
-                        		<h2>
-                            		시간과 장소
-                            	</h2>
-
-
-
-                          	</div>
-                        </div>
-                   </div> <!-- END of ROW-1 -->
-
-                   <!-- ROW-2 -->
-                	<div class="row">
-
-                        <!-- SECTION TITLE -->
-                    	<div class="col-md-12 text-center">
-
-                        	<div class="banner-text dark full animation fadeIn">
-
-                                  <div class="row">
-                                		<div class="col-md-4">
-                                        	<h3>2021년 9월 4일</h3>
-                                        </div>
-                                        <div class="col-md-4">
-                                        	<div class="border-column">
-                                        		<h3>오후 5시</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                        	<h3>엘블레스 웨딩홀</h3>
-                                        </div>
-
-                                  </div>
-
-
-                            </div>
-
-                        </div>
-                   </div> <!-- END of ROW-2 -->
-
-  <div class='calendar'>
-    <div class='month'>2021년 9월</div>
-    <div>
-      <table class='table day'>
-        <tr><td style='color:#ff0000; text-align:center'>일</td><td style="text-align:center">월</td><td style="text-align:center">화</td><td style="text-align:center">수</td><td style="text-align:center">목</td><td style="text-align:center">금</td><td style="color:#ff0000; text-align:center">토</td></tr>
-        <tr><td></td><td></td><td></td><td style="text-align:center">1</td><td style="text-align:center">2</td><td style="text-align:center">3</td><td style='background-color:rgba(255, 0, 0, 0.4); color:006400;text-align:center'>4</td></tr>
-        <tr><td style="color:#ff0000; text-align:center">5</td><td style="text-align:center">6</td><td style="text-align:center">7</td><td style="text-align:center">8</td><td style="text-align:center">9</td><td style="text-align:center">10</td><td style="color:#ff0000; text-align:center">11</td></tr>
-        <tr><td style="color:#ff0000; text-align:center">12</td><td style="text-align:center">13</td><td style="text-align:center">14</td><td style="text-align:center">15</td><td style="text-align:center">16</td><td style="text-align:center">17</td><td style="color:#ff0000; text-align:center">18</td></tr>
-        <tr><td style="color:#ff0000; text-align:center">19</td><td style="text-align:center">20</td><td style="text-align:center">21</td><td style="text-align:center">22</td><td style="text-align:center">23</td><td style="text-align:center">24</td><td style="color:#ff0000; text-align:center">25</td></tr>
-        <tr><td style="color:#ff0000; text-align:center">26</td><td style="text-align:center">27</td><td style="text-align:center">28</td><td style="text-align:center">29</td><td style="text-align:center">30</td><td></td><td></td></tr>
-      </table>
-    </div>
-  </div>
-
-                    <!-- ROW-3 -->
-<div align='center'>
-<div id="map" style="width:350px;height:300px;"></div>
-
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4114917bba98b382c335ebc0f0f8eba2"></script>
-<script>
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-    mapOption = { 
-        center: new kakao.maps.LatLng(37.482802444845035, 127.03512323661555), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
-
-var map = new kakao.maps.Map(mapContainer, mapOption);
-
-// 마커가 표시될 위치입니다 
-var markerPosition  = new kakao.maps.LatLng(37.482802444845035, 127.0351232366155); 
-
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-
-var iwContent = '<div style="padding:5px;">엘블레스 <br><a href="https://map.kakao.com/link/map/엘블레스,37.482802444845035,127.0351232366155" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/엘블레스,37.482802444845035,127.0351232366155" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-    iwPosition = new kakao.maps.LatLng(37.482802444845035, 127.0351232366155); //인포윈도우 표시 위치입니다
-
-// 인포윈도우를 생성합니다
-var infowindow = new kakao.maps.InfoWindow({
-    position : iwPosition, 
-    content : iwContent 
-});
-  
-// 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
-infowindow.open(map, marker); 
-
-//var mapContainer = document.getElementById('map');
-//mapContainer.style.width = '100%';
-//mapContainer.style.height = '100%'; 
-map.relayout();
-</script>
-</div>
-
-                            <h3 class="inline">오시는 길</h3>
-
-                            	<ul><li>서울특별시 서초구 강남대로 213번지 (스포타임 지하1층)</li>
-                            	<li>TEL 02.526.0300</li>
-								</ul>
-
-
-
-                       		<div class="de-icon circle small-size inline" style="background-color:#f6700e">
-                            	<i class="de-icon-truck"></i>
-                            </div>
-                            <h3 class="inline">버스</h3>
-														<ul>
-														<li>양재역, 서초문화예술회관에서 하차</li>
-								</ul>
-
-							<div class="de-icon circle small-size inline" style="background-color:#0d9a48">
-                            	<i class="de-icon-rebel"></i>
-                            </div>
-                            <h3 class="inline">지하철</h3>
-                            <ul>
-                            	<li>3호선양재역/신분당선 양재역 - 9번출구</li>
-                            </ul>
-														<div class="de-icon circle small-size inline" style="background-color:#9400d3">
-							                            	<i class="de-icon-cab"></i>
-							                            </div>
-							                            <h3 class="inline">승용차</h3>
-							                            <ul>
-							                            	<li>서초IC에서 양재역 방면으로 나오신후 양재지하차도로 진입하지 말고 양재역사거리에서 성남방향으로 우회전합니다. 우회전후 60m 직진하시면 우측에 엘블레스가 있습니다.</li>
-							                            </ul>
-                        </div>
-
-
-
-
-                        <!-- <div class="col-md-6 animation fadeIn">
-                        	<div id="map-canvas" style="border:15px solid #FFF; margin-top:20px;"></div>
-                        </div> -->
-
-                    </div> <!-- END of ROW-3 -->
-
-
-
-             	</div>
-            </section>
 
 
            	<!-- GALLERY SECTION -->
@@ -551,6 +398,188 @@ map.relayout();
                             </div><!--END of PHOTO-ITEM-->
                         </div><!--END of GALLERY-ITEM-5-->
 
+             <!-- WHERE WHEN SECTION -->
+            <section id="where-when">
+            	<div class="container">
+
+               	 	<!-- ROW-1 -->
+                	<div class="row">
+
+                        <!-- SECTION TITLE -->
+                    	<div class="col-md-offset-2 col-md-8 text-center">
+
+                        	<div class="section-title animation fadeInUp">
+                        		<h2>
+                            		시간과 장소
+                            	</h2>
+
+
+
+                          	</div>
+                        </div>
+                   </div> <!-- END of ROW-1 -->
+
+                   <!-- ROW-2 -->
+                	<div class="row">
+
+                        <!-- SECTION TITLE -->
+                    	<div class="col-md-12 text-center">
+
+                        	<div class="banner-text dark full animation fadeIn">
+
+                                  <div class="row">
+                                		<div class="col-md-4">
+                                        	<h3>2021년 9월 4일</h3>
+                                        </div>
+                                        <div class="col-md-4">
+                                        	<div class="border-column">
+                                        		<h3>오후 5시</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                        	<h3>엘블레스 웨딩홀</h3>
+                                        </div>
+
+                                  </div>
+
+
+                            </div>
+
+                        </div>
+                   </div> <!-- END of ROW-2 -->
+
+  <div class='calendar'>
+    <div class='month'>2021년 9월</div>
+    <div>
+      <table class='table day'>
+        <tr><td style='color:#ff0000; text-align:center'>일</td><td style="text-align:center">월</td><td style="text-align:center">화</td><td style="text-align:center">수</td><td style="text-align:center">목</td><td style="text-align:center">금</td><td style="color:#ff0000; text-align:center">토</td></tr>
+        <tr><td></td><td></td><td></td><td style="text-align:center">1</td><td style="text-align:center">2</td><td style="text-align:center">3</td><td style='background-color:rgba(255, 0, 0, 0.4); color:006400;text-align:center'>4</td></tr>
+        <tr><td style="color:#ff0000; text-align:center">5</td><td style="text-align:center">6</td><td style="text-align:center">7</td><td style="text-align:center">8</td><td style="text-align:center">9</td><td style="text-align:center">10</td><td style="color:#ff0000; text-align:center">11</td></tr>
+        <tr><td style="color:#ff0000; text-align:center">12</td><td style="text-align:center">13</td><td style="text-align:center">14</td><td style="text-align:center">15</td><td style="text-align:center">16</td><td style="text-align:center">17</td><td style="color:#ff0000; text-align:center">18</td></tr>
+        <tr><td style="color:#ff0000; text-align:center">19</td><td style="text-align:center">20</td><td style="text-align:center">21</td><td style="text-align:center">22</td><td style="text-align:center">23</td><td style="text-align:center">24</td><td style="color:#ff0000; text-align:center">25</td></tr>
+        <tr><td style="color:#ff0000; text-align:center">26</td><td style="text-align:center">27</td><td style="text-align:center">28</td><td style="text-align:center">29</td><td style="text-align:center">30</td><td></td><td></td></tr>
+      </table>
+    </div>
+  </div>
+
+                    <!-- ROW-3 -->
+<!-- 이미지 지도를 표시할 div 입니다 -->
+<div align='center'>
+<div id="staticMap" style="width:356px;height:350px;"></div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4114917bba98b382c335ebc0f0f8eba2"></script>
+<script>
+// 이미지 지도에 표시할 마커입니다
+// 이미지 지도에 표시할 마커를 아래와 같이 배열로 넣어주면 여러개의 마커를 표시할 수 있습니다 
+
+var markers = [
+    {
+        position: new kakao.maps.LatLng(37.482802444845035, 127.03512323661555)
+    },
+    {
+        position: new kakao.maps.LatLng(37.482802444845035, 127.03512323661555)
+        text: '엘블레스 웨딩홀' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다     
+    }
+];
+
+var staticMapContainer  = document.getElementById('staticMap'), // 이미지 지도를 표시할 div  
+    staticMapOption = { 
+        center: new kakao.maps.LatLng(37.482802444845035, 127.03512323661555), // 지도의 중심좌표
+        level: 3, // 이미지 지도의 확대 레벨
+        marker: markers // 이미지 지도에 표시할 마커 
+    };    
+
+// 이미지 지도를 생성합니다
+var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+</script>
+
+<div align='center'>
+<div id="map" style="width:350px;height:300px;"></div>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4114917bba98b382c335ebc0f0f8eba2"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.482802444845035, 127.03512323661555), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption);
+
+// 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.482802444845035, 127.0351232366155); 
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+var iwContent = '<div style="padding:5px;">엘블레스 <br><a href="https://map.kakao.com/link/map/엘블레스,37.482802444845035,127.0351232366155" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/엘블레스,37.482802444845035,127.0351232366155" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+    iwPosition = new kakao.maps.LatLng(37.482802444845035, 127.0351232366155); //인포윈도우 표시 위치입니다
+
+// 인포윈도우를 생성합니다
+var infowindow = new kakao.maps.InfoWindow({
+    position : iwPosition, 
+    content : iwContent 
+});
+  
+// 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+infowindow.open(map, marker); 
+
+//var mapContainer = document.getElementById('map');
+//mapContainer.style.width = '100%';
+//mapContainer.style.height = '100%'; 
+map.relayout();
+</script>
+</div>
+
+                            <h3 class="inline">오시는 길</h3>
+
+                            	<ul><li>서울특별시 서초구 강남대로 213번지 (스포타임 지하1층)</li>
+                            	<li>TEL 02.526.0300</li>
+								</ul>
+
+
+
+                       		<div class="de-icon circle small-size inline" style="background-color:#f6700e">
+                            	<i class="de-icon-truck"></i>
+                            </div>
+                            <h3 class="inline">버스</h3>
+														<ul>
+														<li>양재역, 서초문화예술회관에서 하차</li>
+								</ul>
+
+							<div class="de-icon circle small-size inline" style="background-color:#0d9a48">
+                            	<i class="de-icon-rebel"></i>
+                            </div>
+                            <h3 class="inline">지하철</h3>
+                            <ul>
+                            	<li>3호선양재역/신분당선 양재역 - 9번출구</li>
+                            </ul>
+														<div class="de-icon circle small-size inline" style="background-color:#9400d3">
+							                            	<i class="de-icon-cab"></i>
+							                            </div>
+							                            <h3 class="inline">승용차</h3>
+							                            <ul>
+							                            	<li>서초IC에서 양재역 방면으로 나오신후 양재지하차도로 진입하지 말고 양재역사거리에서 성남방향으로 우회전합니다. 우회전후 60m 직진하시면 우측에 엘블레스가 있습니다.</li>
+							                            </ul>
+                        </div>
+
+
+
+
+                        <!-- <div class="col-md-6 animation fadeIn">
+                        	<div id="map-canvas" style="border:15px solid #FFF; margin-top:20px;"></div>
+                        </div> -->
+
+                    </div> <!-- END of ROW-3 -->
+
+
+
+             	</div>
+            </section>
 
             <!-- RSVP SECTION -->
             <section id="rsvp-section">
