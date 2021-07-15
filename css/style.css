@@ -265,13 +265,13 @@ h4.inline, h5.inline, h6.inline{
 p{
 	font-family: 'Arvo','Noto Sans KR', serif;
 	font-size:15px;
-	line-height:6px;
-	margin-bottom:5px;
+	line-height:26px;
+	margin-bottom:25px;
 }
 
 p.lead{
 	font-size:19px;
-	line-height:8px;
+	line-height:28px;
 	font-weight:normal;
 }
 
