@@ -2712,6 +2712,40 @@ footer .image-divider.fixed-height{
 }
 
 /* ----------------------------------------------*/
+/* 14.2.1 Parents Section							 */
+/* ----------------------------------------------*/
+.parents-name{
+	position:relative;
+}
+
+.parents-name h2{
+	font-size:25px;
+	margin-top:50px;
+	margin-bottom:20px;
+}
+
+.parents-name .last-name{
+	font-family: 'Pacifico', cursive;
+	font-size:20px;
+	display:block;
+	margin-top:0;
+}
+
+.parents-name .heart-wrapper{
+	position:absolute;
+	right:-50px;
+	top:0;
+}
+
+.parents-name .custom-heart{
+	background-color:#f0394d;
+	width:65px;
+	height:65px;
+	line-height:65px;
+	font-size:26px;
+}
+
+/* ----------------------------------------------*/
 /* 14.3 Our Story Section						 */
 /* ----------------------------------------------*/
 #our-story{
