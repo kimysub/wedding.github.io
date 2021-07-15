@@ -425,142 +425,102 @@
                             </div>
                         </div>
                    </div> <!-- END of ROW-2 -->
-  <div class='calendar'>
-    <div class='month SF-font'>2021년 9월</div>
-    <div>
-      <table class='table day'>
-        <tr><td style='color:#ff0000; text-align:center'>일</td><td style="text-align:center">월</td><td style="text-align:center">화</td><td style="text-align:center">수</td><td style="text-align:center">목</td><td style="text-align:center">금</td><td style="color:#ff0000; text-align:center">토</td></tr>
-        <tr><td></td><td></td><td></td><td style="text-align:center">1</td><td style="text-align:center">2</td><td style="text-align:center">3</td><td style='background-color:rgba(255, 0, 0, 0.4); color:006400;text-align:center'>4</td></tr>
-        <tr><td style="color:#ff0000; text-align:center">5</td><td style="text-align:center">6</td><td style="text-align:center">7</td><td style="text-align:center">8</td><td style="text-align:center">9</td><td style="text-align:center">10</td><td style="color:#ff0000; text-align:center">11</td></tr>
-        <tr><td style="color:#ff0000; text-align:center">12</td><td style="text-align:center">13</td><td style="text-align:center">14</td><td style="text-align:center">15</td><td style="text-align:center">16</td><td style="text-align:center">17</td><td style="color:#ff0000; text-align:center">18</td></tr>
-        <tr><td style="color:#ff0000; text-align:center">19</td><td style="text-align:center">20</td><td style="text-align:center">21</td><td style="text-align:center">22</td><td style="text-align:center">23</td><td style="text-align:center">24</td><td style="color:#ff0000; text-align:center">25</td></tr>
-        <tr><td style="color:#ff0000; text-align:center">26</td><td style="text-align:center">27</td><td style="text-align:center">28</td><td style="text-align:center">29</td><td style="text-align:center">30</td><td></td><td></td></tr>
-      </table>
-    </div>
-  </div>
 
-                    <!-- ROW-3 -->
+  				<div class='calendar'>
+    				<div class='month SF-font'>2021년 9월</div>
+    				<div>
+      					<table class='table day'>
+        				<tr><td style='color:#ff0000; text-align:center'>일</td><td style="text-align:center">월</td><td style="text-align:center">화</td><td style="text-align:center">수</td><td style="text-align:center">목</td><td style="text-align:center">금</td><td style="color:#ff0000; text-align:center">토</td></tr>
+        				<tr><td></td><td></td><td></td><td style="text-align:center">1</td><td style="text-align:center">2</td><td style="text-align:center">3</td><td style='background-color:rgba(255, 0, 0, 0.4); color:006400;text-align:center'>4</td></tr>
+        				<tr><td style="color:#ff0000; text-align:center">5</td><td style="text-align:center">6</td><td style="text-align:center">7</td><td style="text-align:center">8</td><td style="text-align:center">9</td><td style="text-align:center">10</td><td style="color:#ff0000; text-align:center">11</td></tr>
+        				<tr><td style="color:#ff0000; text-align:center">12</td><td style="text-align:center">13</td><td style="text-align:center">14</td><td style="text-align:center">15</td><td style="text-align:center">16</td><td style="text-align:center">17</td><td style="color:#ff0000; text-align:center">18</td></tr>
+        				<tr><td style="color:#ff0000; text-align:center">19</td><td style="text-align:center">20</td><td style="text-align:center">21</td><td style="text-align:center">22</td><td style="text-align:center">23</td><td style="text-align:center">24</td><td style="color:#ff0000; text-align:center">25</td></tr>
+        				<tr><td style="color:#ff0000; text-align:center">26</td><td style="text-align:center">27</td><td style="text-align:center">28</td><td style="text-align:center">29</td><td style="text-align:center">30</td><td></td><td></td></tr>
+      					</table>
+    				</div>
+  				</div>
 <!-- 이미지 지도를 표시할 div 입니다 -->
-<div align='center'><h2 class="SF-font">오시는 길</h2></div>
-<div align='center'>
-<div id="staticMap" style="width:356px;height:350px;"></div>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4114917bba98b382c335ebc0f0f8eba2"></script>
-<script>
-// 이미지 지도에 표시할 마커입니다
-// 이미지 지도에 표시할 마커를 아래와 같이 배열로 넣어주면 여러개의 마커를 표시할 수 있습니다 
+				<div align='center'><h2 class="SF-font">오시는 길</h2></div>
+				
+				<div align='center'>
+					<div id="staticMap" style="width:356px;height:350px;"></div>
+					<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4114917bba98b382c335ebc0f0f8eba2"></script>
+					<script>
+						var markers = [
+						    {
+						        position: new kakao.maps.LatLng(37.482802444845035, 127.03512323661555),
+						        text: '엘블레스 웨딩홀' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다     
+						    }
+						];
+						
+						var staticMapContainer  = document.getElementById('staticMap'), // 이미지 지도를 표시할 div  
+						    staticMapOption = { 
+						        center: new kakao.maps.LatLng(37.482802444845035, 127.03512323661555), // 지도의 중심좌표
+						        level: 3, // 이미지 지도의 확대 레벨
+						        marker: markers // 이미지 지도에 표시할 마커 
+						    };    
+						
+						// 이미지 지도를 생성합니다
+						var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+					</script>
+				</div>
 
-var markers = [
-    {
-        position: new kakao.maps.LatLng(37.482802444845035, 127.03512323661555),
-        text: '엘블레스 웨딩홀' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다     
-    }
-];
-
-var staticMapContainer  = document.getElementById('staticMap'), // 이미지 지도를 표시할 div  
-    staticMapOption = { 
-        center: new kakao.maps.LatLng(37.482802444845035, 127.03512323661555), // 지도의 중심좌표
-        level: 3, // 이미지 지도의 확대 레벨
-        marker: markers // 이미지 지도에 표시할 마커 
-    };    
-
-// 이미지 지도를 생성합니다
-var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
-</script>
-</div>
-
-                            	<ul><h3 class="SF-font">엘블레스</h3>
-                            	<li class="SF-font">서울특별시 서초구 강남대로 213번지<br>
-                            	   (스포타임 지하1층)<br>
-                            	   TEL 02.526.0300
-								<a href="tel:025260300"><img src="./images/call.png" width=10 alt=""></a>
-								</li>
-								</ul>
-
-
-
-                       		<div class="de-icon circle small-size inline" style="background-color:#f6700e">
-                            	<i class="de-icon-truck"></i>
-                            </div>
-                            <h3 class="inline SF-font">버스</h3>
-														<ul>
-														<li class="SF-font">양재역, 서초문화예술회관에서 하차</li>
-								</ul>
-
-							<div class="de-icon circle small-size inline" style="background-color:#0d9a48">
-                            	<i class="de-icon-rebel"></i>
-                            </div>
-                            <h3 class="inline SF-font">지하철</h3>
-                            <ul>
-                            	<li class="SF-font">3호선양재역/신분당선 양재역 - 9번출구</li>
-                            </ul>
-														<div class="de-icon circle small-size inline" style="background-color:#9400d3">
-							                            	<i class="de-icon-cab"></i>
-							                            </div>
-							                            <h3 class="inline SF-font">승용차</h3>
-							                            <ul>
-							                            	<li class="SF-font">서초IC에서 양재역 방면으로 나오신후<br>
-															 양재지하차도로 진입하지 말고 양재역사거리에서 <br>
-															 성남방향으로 우회전합니다. <br>
-															 우회전후 60m 직진하시면 <br>
-															 우측에 엘블레스가 있습니다.</li>
-							                            </ul>
-                        </div>
-
-
-
-
-                        <!-- <div class="col-md-6 animation fadeIn">
-                        	<div id="map-canvas" style="border:15px solid #FFF; margin-top:20px;"></div>
-                        </div> -->
-
-                    </div> <!-- END of ROW-3 -->
-
-
-
-             	</div>
-            </section>
-
-            <!-- RSVP SECTION -->
-            <section id="rsvp-section">
-
-                <div class="container">
-
-               	 	<!-- ROW-1 -->
-                	<div class="row">
-
-                        <!-- SECTION TITLE -->
-                    	<div class="col-md-offset-2 col-md-8 text-center">
-
-                        	<div class="section-title animation fadeInUp">
-                        		<h2 class='SF-font'>
-                            		고맙습니다.
-                            	</h2>
-
-                        		<h3 class='SF-font'>
-                            		공유하기    
-<a id="create-kakao-link-btn" href="javascript:;">
-  <img
-    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" width=30
-  />
-</a>
-<script type="text/javascript">
-    Kakao.init('4114917bba98b382c335ebc0f0f8eba2');
-  Kakao.Link.createScrapButton({
-    container: '#create-kakao-link-btn',
-    requestUrl: 'https://kimysub.github.io/wedding.github.io',
-  })
-</script>
-              </h3>
-
-
-                          	</div>
-                         </div>
-                   </div> <!-- END of ROW-1 -->
-
-
+                <ul><h3 class="SF-font">엘블레스</h3>
+                   	<li class="SF-font">서울특별시 서초구 강남대로 213번지<br>(스포타임 지하1층)<br>TEL 02.526.0300  <a href="tel:025260300"><img src="./images/call.png" width=10 alt=""></a></li>
+				</ul>
+                <div class="de-icon circle small-size inline" style="background-color:#f6700e">
+                   	<i class="de-icon-truck"></i>
                 </div>
+                <h3 class="inline SF-font">버스</h3>
+				<ul>
+					<li class="SF-font">양재역, 서초문화예술회관에서 하차</li>
+				</ul>
+				<div class="de-icon circle small-size inline" style="background-color:#0d9a48">
+                   	<i class="de-icon-rebel"></i>
+                </div>
+                <h3 class="inline SF-font">지하철</h3>
+                <ul>
+                   	<li class="SF-font">3호선양재역/신분당선 양재역 - 9번출구</li>
+                </ul>
+				<div class="de-icon circle small-size inline" style="background-color:#9400d3">
+			       	<i class="de-icon-cab"></i>
+			    </div>
+			    <h3 class="inline SF-font">승용차</h3>
+			    <ul>
+			       	<li class="SF-font">서초IC에서 양재역 방면으로 나오신후<br> 양재지하차도로 진입하지 않고 양재역사거리에서 <br> 성남방향으로 우회전합니다. <br> 우회전후 60m 직진하시면 <br> 우측에 엘블레스가 있습니다.</li>
+				</ul>
+           </div>
+      </section>
 
-           	</section>
+      <!-- RSVP SECTION -->
+      <section id="rsvp-section">
+          <div class="container">
+              <!-- ROW-1 -->
+               <div class="row">
+                   <!-- SECTION TITLE -->
+                  	<div class="col-md-offset-2 col-md-8 text-center">
+                       	<div class="section-title animation fadeInUp">
+                       		<h2 class='SF-font'>
+                           		고맙습니다.
+                           	</h2>
+                        	<h3 class='SF-font'>
+                           		공유하기    
+								<a id="create-kakao-link-btn" href="javascript:;">
+  									<img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" width=30 />
+								</a>
+								<script type="text/javascript">
+								    Kakao.init('4114917bba98b382c335ebc0f0f8eba2');
+								  	Kakao.Link.createScrapButton({
+								    container: '#create-kakao-link-btn',
+								    requestUrl: 'https://kimysub.github.io/wedding.github.io',
+								  })
+								</script>
+              				</h3>
+                       	</div>
+                    </div>
+               </div> <!-- END of ROW-1 -->
+          </div>
+    </section>
 
 
 
