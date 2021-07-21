@@ -2702,6 +2702,9 @@ footer .image-divider.fixed-height{
 	right:-50px;
 	top:0;
 }
+.his-her-name .heart-below{
+	display:none;
+}
 
 .his-her-name .custom-heart{
 	background-color:#f0394d;
@@ -3353,6 +3356,11 @@ h1, .h1{
 /* ----------------------------------------------*/
 .his-her-name .heart-wrapper{
 	display:none;
+}
+.his-her-name .heart-below{
+	position:absolute;
+	right:-50px;
+	top:0;
 }
 
 /* ----------------------------------------------*/
