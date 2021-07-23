@@ -2845,8 +2845,8 @@ footer .image-divider.fixed-height{
 }
 #where-when ul{
   width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
