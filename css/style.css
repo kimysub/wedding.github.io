@@ -2843,6 +2843,12 @@ footer .image-divider.fixed-height{
 .and{
 	color:#f0394d
 }
+#where-when ul{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .border-column{
 	border-left:1px solid #8b8b8b;
