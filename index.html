@@ -30,21 +30,6 @@
         <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-
-        <style>
-            #my_modal {
-                display: none;
-                width: 300px;
-                background-color: #fefefe;
-            }
-
-            #my_modal .modal_close_btn {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-            }
-        </style>
-
   <style>
 	/*구글 웹 폰트 적용*/
 	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
@@ -538,25 +523,14 @@
            </div>
       </section>
 
-
       <!-- RSVP SECTION -->
       <section id="rsvp-section">
-          <!--<div class="container">-->
+          <div class="container">
               <!-- ROW-1 -->
                <div class="row">
-                   <!-- SECTION TITLE--> 
+                   <!-- SECTION TITLE -->
                   	<div class="col-md-offset-2 col-md-8 text-center">
                        	<div class="section-title animation fadeInUp">
-        <div id="my_modal">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolore eveniet laborum repellat sit distinctio, ipsa rem dicta alias velit? Repellat doloribus mollitia dolorem
-            voluptatum ex reiciendis aut in incidunt?
-            <a class="modal_close_btn">닫기</a>
-        </div>
-
-        <div>신랑측 마음전하기<button id="popup_open_groom">계좌번호 보기</button>
-		</div>
-        <div>신부측 마음전하기<button id="popup_open_bride">계좌번호 보기</button>
-		</div>
                         	<h3 class='SF-font'>
                            		카카오로  공유하기    
 								<a id="create-kakao-link-btn" href="javascript:;">
@@ -573,7 +547,7 @@
                        	</div>
                     </div>
                </div> <!-- END of ROW-1 -->
-          <!--</div>-->
+          </div>
     </section>
 
 
@@ -669,64 +643,6 @@
 				</script>
 
 				<script src="js/jquery.scrolldepth.min.js"></script>
-        <script>
-            function modal(id) {
-                var zIndex = 9999;
-                var modal = document.getElementById(id);
-
-                // 모달 div 뒤에 희끄무레한 레이어
-                var bg = document.createElement('div');
-                bg.setStyle({
-                    position: 'fixed',
-                    zIndex: zIndex,
-                    left: '0px',
-                    top: '0px',
-                    width: '100%',
-                    height: '100%',
-                    overflow: 'auto',
-                    // 레이어 색갈은 여기서 바꾸면 됨
-                    backgroundColor: 'rgba(0,0,0,0.4)'
-                });
-                document.body.append(bg);
-
-                // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
-                modal.querySelector('.modal_close_btn').addEventListener('click', function() {
-                    bg.remove();
-                    modal.style.display = 'none';
-                });
-
-                modal.setStyle({
-                    position: 'fixed',
-                    display: 'block',
-                    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-
-                    // 시꺼먼 레이어 보다 한칸 위에 보이기
-                    zIndex: zIndex + 1,
-
-                    // div center 정렬
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    msTransform: 'translate(-50%, -50%)',
-                    webkitTransform: 'translate(-50%, -50%)'
-                });
-            }
-
-            // Element 에 style 한번에 오브젝트로 설정하는 함수 추가
-            Element.prototype.setStyle = function(styles) {
-                for (var k in styles) this.style[k] = styles[k];
-                return this;
-            };
-
-            document.getElementById('popup_open_bride').addEventListener('click', function() {
-                // 모달창 띄우기
-                modal('my_modal');
-            });
-            document.getElementById('popup_open_groom').addEventListener('click', function() {
-                // 모달창 띄우기
-                modal('my_modal');
-            });
-        </script>
 <script>
 jQuery(function() {
   jQuery.scrollDepth();
