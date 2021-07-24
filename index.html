@@ -531,7 +531,36 @@
                    <!-- SECTION TITLE--> 
                   	<div class="col-md-offset-2 col-md-8 text-center">
                        	<div class="section-title animation fadeInUp">
-						<button>모달창</button> <div class="modal"> <div class="modal_content" title="클릭하면 창이 닫힙니다."> 여기에 모달창 내용을 적어줍니다.<br> 이미지여도 좋고 글이어도 좋습니다. </div> </div>
+<!doctype html>
+
+<div id="root">
+   
+    <button type="button" id="modal_opne_btn">모달 창 열기</button>
+       
+</div>
+
+<div id="modal">
+   
+    <div class="modal_content">
+        <h2>모달 창</h2>
+       
+        <p>모달 창 입니다.</p>
+       
+        <button type="button" id="modal_close_btn">모달 창 닫기</button>
+       
+    </div>
+   
+    <div class="modal_layer"></div>
+</div>
+<script>
+    $("#modal_opne_btn").click(function(){
+        $("#modal").attr("style", "display:block");
+    });
+   
+     $("#modal_close_btn").click(function(){
+        $("#modal").attr("style", "display:none");
+    });      
+</script>
                         	<h3 class='SF-font'>
                            		카카오로  공유하기    
 								<a id="create-kakao-link-btn" href="javascript:;">
