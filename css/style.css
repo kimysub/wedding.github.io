@@ -3771,4 +3771,4 @@ footer .image-divider.fixed-height{
 	letter-spacing:3px;
 	margin-top:10px;
 }
-}
+.modal{ position:absolute; width:100%; height:100%; background: rgba(0,0,0,0.8); top:0; left:0; display:none; }
