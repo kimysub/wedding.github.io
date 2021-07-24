@@ -547,19 +547,19 @@
           <!--<div class="container">-->
               <!-- ROW-1 -->
                <div class="row">
+                   <!-- SECTION TITLE--> 
+                  	<div class="col-md-offset-2 col-md-8 text-center">
+                       	<div class="section-title animation fadeInUp">
         <div id="my_modal">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolore eveniet laborum repellat sit distinctio, ipsa rem dicta alias velit? Repellat doloribus mollitia dolorem
             voluptatum ex reiciendis aut in incidunt?
             <a class="modal_close_btn">닫기</a>
         </div>
 
-        <div>신랑측 마음전하기<button id="popup_open_btn">계좌번호 보기</button>
+        <div>신랑측 마음전하기<button id="popup_open_groom">계좌번호 보기</button>
 		</div>
-        <div>신부측 마음전하기<button id="popup_open_btn">계좌번호 보기</button>
+        <div>신부측 마음전하기<button id="popup_open_bride">계좌번호 보기</button>
 		</div>
-                   <!-- SECTION TITLE--> 
-                  	<div class="col-md-offset-2 col-md-8 text-center">
-                       	<div class="section-title animation fadeInUp">
                         	<h3 class='SF-font'>
                            		카카오로  공유하기    
 								<a id="create-kakao-link-btn" href="javascript:;">
@@ -721,7 +721,11 @@
                 return this;
             };
 
-            document.getElementById('popup_open_btn').addEventListener('click', function() {
+            document.getElementById('popup_open_bride').addEventListener('click', function() {
+                // 모달창 띄우기
+                modal('my_modal');
+            });
+            document.getElementById('popup_open_groom').addEventListener('click', function() {
                 // 모달창 띄우기
                 modal('my_modal');
             });
