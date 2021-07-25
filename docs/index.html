@@ -779,17 +779,9 @@
   </script>
 					<script>
 var myAudio = document.getElementById("myAudio");
-var isPlaying = false;
 
 function togglePlay() {
-  isPlaying ? myAudio.pause() : myAudio.play();
-};
-
-myAudio.onplaying = function() {
-  isPlaying = true;
-};
-myAudio.onpause = function() {
-  isPlaying = false;
+  return myAudio.paused ? myAudio.play() : myAudio.pause();
 };
 					</script>
 <script>
