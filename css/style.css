@@ -933,6 +933,7 @@ img.with-border{
 /* ----------------------------------------------*/
 #main-slider.flexslider {
 	border: none;
+	position:relative;
 }
 
 #main-slider .slides,
@@ -1030,8 +1031,6 @@ img.with-border{
 /* 06.5.3 Title Wrapper */
 /* ----------------------------------------------*/
 .slide-title{
-	position:absolute;
-	height:70%;
 	display: table-cell;
 	text-align:center;
     color:#FFF;
