@@ -295,6 +295,9 @@ a:hover{
 .no-margin{
 	margin:0;
 }
+.marginbottom{
+	margin-bottom:50px;
+}
 
 img.fullwidth{
 	width:100%;
@@ -1960,7 +1963,7 @@ a:hover .de-icon.effect3{
 	margin: auto;
 	top: 0;
 	right: 0;
-	bottom: 100px;
+	bottom: 0;
 	left: 0;
 	width:100%;
 	height:100%;
