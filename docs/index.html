@@ -774,13 +774,6 @@
       alert('계좌번호를 복사하였습니다');
     });
   </script>
-					<script>
-var myAudio = document.getElementById("myAudio");
-
-function togglePlay() {
-  return myAudio.paused ? myAudio.play() : myAudio.pause();
-};
-					</script>
 <script>
 jQuery(function() {
   jQuery.scrollDepth();
@@ -790,9 +783,9 @@ jQuery(function() {
 </div>
 
 <div class="bottom_left">
-    <audio id="myAudio" src="mus.mp3"></audio>
+    <audio id="myAudio" src="iminlove.mp3"></audio>
     <div>
-        <i class="fa fa-music fa-2x" onclick="togglePlay()"></i>
+        <i class="fa fa-music fa-2x" onclick="document.getElementById('myAudio').play()"></i>
     </div>
 </div>
 	</body>
