@@ -1938,6 +1938,7 @@ a:hover .de-icon.effect3{
 .photo-item {
 	position:relative;
 	overflow:hidden;
+margin-bottom:10px;
 }
 
 .photo-item.frame-border {
