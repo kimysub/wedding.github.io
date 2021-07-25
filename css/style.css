@@ -1039,10 +1039,6 @@ img.with-border{
 .slide-title h1, .slide-title h2, .slide-title h3,
 .slide-title h4, .slide-title h5, .slide-title h6{
 	color:#FFF;
-    /*text-shadow: -1px 0 black, 
-                0 1px black, 
-                1px 0 black, 
-                0 -1px black;*/
 }
 
 
@@ -2684,10 +2680,6 @@ footer .image-divider.fixed-height{
 	/*font-family: 'Oswald', 'Noto Sans KR', sans-serif;*/
 	letter-spacing:3px;
 	font-size:14px;
-    /*text-shadow: -1px 0 black, 
-                0 1px black, 
-                1px 0 black, 
-                0 -1px black;*/
 }
 
 /* ----------------------------------------------*/
