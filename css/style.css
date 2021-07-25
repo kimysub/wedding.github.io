@@ -1060,7 +1060,7 @@ img.with-border{
 	/*padding-bottom:0px;*/
 }
 .slide-title.align-per{
-	vertical-align: -500%;
+	vertical-align: 100px;
 	/*padding-bottom:0px;*/
 }
 
