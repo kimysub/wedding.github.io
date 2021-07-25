@@ -306,6 +306,22 @@ img.fullwidth{
 img.with-border{
 	border:1px solid #6a6a6a;
 }
+.bottom_right {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0px 15px 15px 15px;
+}
+
+.bottom_left {
+    overflow: hidden;
+    position: fixed;
+    text-align: right;
+    bottom: 0;
+    left: 0;
+    margin: 0px 15px 15px 15px;
+}
 
 
 /*===============================================*/
@@ -3774,20 +3790,4 @@ footer .image-divider.fixed-height{
 	color:#FFF;
 	letter-spacing:3px;
 	margin-top:10px;
-}
-.bottom_right {
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 0px 15px 15px 15px;
-}
-
-.bottom_left {
-    overflow: hidden;
-    position: fixed;
-    text-align: right;
-    bottom: 0;
-    left: 0;
-    margin: 0px 15px 15px 15px;
 }
