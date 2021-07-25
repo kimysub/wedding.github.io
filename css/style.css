@@ -1938,7 +1938,6 @@ a:hover .de-icon.effect3{
 .photo-item {
 	position:relative;
 	overflow:hidden;
-margin-bottom:40px;
 }
 
 .photo-item.frame-border {
@@ -1958,7 +1957,7 @@ margin-bottom:40px;
 /* ----------------------------------------------*/
 .photo-item .layer {
 	position: absolute;
-	margin: auto;
+	margin: 20px auto;
 	top: 0;
 	right: 0;
 	bottom: 0;
