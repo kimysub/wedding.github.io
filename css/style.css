@@ -1012,8 +1012,7 @@ img.with-border{
 .slide-title-outter-wrapper{
 	position:absolute;
 	width:100%;
-	/*height:inherit;*/
-	height:70%;
+	height:inherit;
 	left:0;
 	z-index:3;
 	overflow:hidden;
@@ -1023,7 +1022,8 @@ img.with-border{
 /* ----------------------------------------------*/
 .slide-title-inner-wrapper{
 	width:1170px;
-	height:inherit;
+	/*height:inherit;*/
+	height:70%;
 	margin:0 auto;
 	display: table;
 }
