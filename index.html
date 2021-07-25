@@ -472,7 +472,7 @@
 
 				<div align='center'>
                 	<ul><h3 class="SF-font">엘블레스</h3>
-                	   	<li class="SF-font">서울특별시 서초구 강남대로 213번지<br>(스포타임 지하1층)<br>TEL 02.526.0300  <a href="tel:025260300"><img src="./images/phone_image.png" width=15 alt=""></a></li>
+                	   	<li class="SF-font">서울특별시 서초구 강남대로 213번지<br>(스포타임 지하1층)<br>TEL 02.526.0300  <a href="tel:025260300"><img src="./images/phone_image.png" width=25 alt=""></a></li>
 					</ul>
 					<ul>
                 	<div class="de-icon circle small-size inline" style="background-color:#f6700e">
@@ -518,7 +518,7 @@
                         	<h3 class='SF-font'>
                            		카카오로  공유하기    
 								<a id="create-kakao-link-btn" href="javascript:;">
-									<img src="./images/kakaoblack.png" width=15 alt="">
+									<img src="./images/kakaoblack.png" width=35 alt="">
 								</a>
 								<script type="text/javascript">
 								    Kakao.init('4114917bba98b382c335ebc0f0f8eba2');
@@ -527,6 +527,12 @@
 								    requestUrl: 'https://kimysub.github.io/wedding.github.io',
 								  })
 								</script>
+              				</h3>
+                        	<h3 class='SF-font'>
+                           		링크 복사하기    
+								<a id="copybtn1" onclick="copyToClipboard();" title="주소 복사">
+									<img src="./images/copylink.png" width=35 alt="">
+								</a>
               				</h3>
                        	</div>
                     </div>
@@ -682,6 +688,21 @@
                 modal('my_modal');
             });
         </script>
+  <script>
+    function copyToClipboard(val) {
+    var t = document.createElement("textarea");
+    document.body.appendChild(t);
+    t.value = val;
+    t.select();
+    document.execCommand('copy');
+    document.body.removeChild(t);
+    }
+
+    $('#copybtn1').click(function() {
+      copyToClipboard('https://invitation.ys-ys-wedding.site/');
+      alert('주소를 복사하였습니다');
+    });
+  </script>
 <script>
 jQuery(function() {
   jQuery.scrollDepth();
