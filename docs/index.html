@@ -30,6 +30,7 @@
         <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <style>
 	/*구글 웹 폰트 적용*/
 	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
@@ -781,6 +782,14 @@ jQuery(function() {
   jQuery.scrollDepth();
 });
 </script>
+<div class="bottom_right"><i class="fa fa-arrow-up fa-2x" id="go-to-top"></i>
+</div>
 
+<div class="bottom_left">
+    <audio id="player" src="mus.mp3"></audio>
+    <div>
+        <i class="fa fa-music fa-2x" onclick="document.getElementById('player').play()"></i>
+    </div>
+</div>
 	</body>
 </html>
