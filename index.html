@@ -514,7 +514,14 @@
             <a class="modal_close_btn">닫기</a>
         </div>
 
-        <button id="popup_open_btn">팝업창 띄어 줘염</button>
+                        	<h3 class='SF-font'>
+                           		신랑측 마음전하기    
+        						<button id="popup_open_btn1">계좌번호 보기</button>
+							</h3>
+                        	<h3 class='SF-font'>
+                           		신부측 마음전하기    
+        						<button id="popup_open_btn2">계좌번호 보기</button>
+							</h3>
                         	<h3 class='SF-font'>
                            		카카오로  공유하기    
 								<a id="create-kakao-link-btn" href="javascript:;">
@@ -683,7 +690,11 @@
                 return this;
             };
 
-            document.getElementById('popup_open_btn').addEventListener('click', function() {
+            document.getElementById('popup_open_btn1').addEventListener('click', function() {
+                // 모달창 띄우기
+                modal('my_modal');
+            });
+            document.getElementById('popup_open_btn2').addEventListener('click', function() {
                 // 모달창 띄우기
                 modal('my_modal');
             });
