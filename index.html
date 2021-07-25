@@ -49,11 +49,9 @@
                 border-radius: 3px;
             }
             #my_modal .modal_contents{
-                position: absolute;
-                top: 10px;
-                right: 10px;
+				width:100%;
+				padding: 5px 5px;
             }
-
             #my_modal .modal_close_btn {
                 position: absolute;
                 top: 10px;
@@ -514,11 +512,10 @@
                   	<div class="col-md-offset-2 col-md-8 text-center">
                        	<div class="section-title animation fadeInUp">
         <div id="my_modal">
-			<p>신한은행<br>110-189-272727
-			<button id="copybtn2" onclick="copyToClipboard();">계좌번호 복사</button>
+			<p class="modal_contents">신한은행<br>110-189-272727<button id="copybtn2" onclick="copyToClipboard();">계좌번호 복사</button>
 			<br>(예금주: 김영섭)</p>
-			<p>우체국<br>400101-02-035239 
-			<button id="copybtn3" onclick="copyToClipboard();">계좌번호 복사</button>
+			<p>우체국<br>
+			400101-02-035239<button id="copybtn3" onclick="copyToClipboard();">계좌번호 복사</button>
 			<br>(예금주:김경민)</p>
             <a class="modal_close_btn">닫기</a>
         </div>
