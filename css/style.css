@@ -1022,8 +1022,7 @@ img.with-border{
 /* ----------------------------------------------*/
 .slide-title-inner-wrapper{
 	width:1170px;
-	/*height:inherit;*/
-	height:70%;
+	height:inherit;
 	margin:0 auto;
 	display: table;
 }
@@ -1031,6 +1030,8 @@ img.with-border{
 /* 06.5.3 Title Wrapper */
 /* ----------------------------------------------*/
 .slide-title{
+	position:absolute;
+	height:70%;
 	display: table-cell;
 	text-align:center;
     color:#FFF;
