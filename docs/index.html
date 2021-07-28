@@ -543,15 +543,18 @@
 			<p class="modal_contents">우체국&nbsp&nbsp&nbsp400101-02-035239<br>
 			(예금주: 김경민)<button id="copybtn3" class="btnclass" onclick="copyToClipboard();">계좌번호 복사</button>
 			</p>
+			<p class="modal_contents">전북은행&nbsp&nbsp542-22-0004711<br>
+			(예금주: 김경민)<button id="copybtn4" class="btnclass" onclick="copyToClipboard();">계좌번호 복사</button>
+			</p>
             <a class="modal_close_btn">닫기</a>
         </div>
         <div id="my_modal2">
 			<p class="modal_contents">기업은행&nbsp&nbsp327-064791-01-013<br>
 			(예금주: 정이슬)
-			<button id="copybtn4" class="btnclass" onclick="copyToClipboard();">계좌번호 복사</button>
+			<button id="copybtn5" class="btnclass" onclick="copyToClipboard();">계좌번호 복사</button>
 			</p>
 			<p class="modal_contents">농협 &nbsp&nbsp&nbsp&nbsp&nbsp401030-52-015421<br>
-			(예금주: 정석훈)<button id="copybtn5" class="btnclass" onclick="copyToClipboard();">계좌번호 복사</button>
+			(예금주: 정석훈)<button id="copybtn6" class="btnclass" onclick="copyToClipboard();">계좌번호 복사</button>
 			</p>
             <a class="modal_close_btn">닫기</a>
         </div>
@@ -772,10 +775,14 @@
       alert('계좌번호를 복사하였습니다');
     });
     $('#copybtn4').click(function() {
-      copyToClipboard('32706479101013');
+      copyToClipboard('542220004711');
       alert('계좌번호를 복사하였습니다');
     });
     $('#copybtn5').click(function() {
+      copyToClipboard('32706479101013');
+      alert('계좌번호를 복사하였습니다');
+    });
+    $('#copybtn6').click(function() {
       copyToClipboard('40103052015421');
       alert('계좌번호를 복사하였습니다');
     });
