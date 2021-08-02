@@ -45,10 +45,5 @@ a {
 }
 .btn_wrap a {
     font-weight: bold;
-}
-.ico_arrow{
-  width:80px;
-  height:80px;
-  position:relative;
-  text-indent:-9999px;
+    font-size: 40px;
 }
