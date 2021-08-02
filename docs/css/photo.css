@@ -34,6 +34,10 @@ a {
     float: left;
     text-align: center;
 }
+#photo_list ul a {
+    font-weight: bold;
+    font-size: 40px;
+}
 #photo_list {
     width: 300px;
     margin: 10px auto;
